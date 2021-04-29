@@ -49,6 +49,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 var initApp = function() {
   document.getElementById('sign-out').addEventListener('click', function() {
     firebase.auth().signOut();
+    window.location.assign("https://vyasakond949.github.io/otp/index.html");
   });
 };
 
